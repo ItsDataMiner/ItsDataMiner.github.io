@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meadow Ridge Trains and Hobbies</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+  <style>
+
+/* Carousel Styling */
+.slide1{
+  
+  background-image: url('Images/Trucksonbridge.jpg');
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide2{
+  background-image: url('Images/Truckcloseup.jpg');
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide3{
+  background-image: url('Images/MeadowTrainsRacingCar.jpg');
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.carousel-caption h1{
+  font-size: 5.4em;
+  font-family: 'Pacifico', cursive;
+  padding-bottom: .4em;
+}
+.carousel-caption p{
+  font-size: 2em;
+}
+  body {
+      position: relative; 
+  }
+  .affix {
+      top:0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+  .navbar {
+      margin-bottom: 0px;
+  }
+
+  .affix ~ .container-fluid {
+     position: relative;
+  top: 50px;}
+	 
+	.footer {
+   position:fixed;
+   bottom:0;
+   width:100%;
+   height:30px;   /* Height of the footer */
+   background:#ffffff;
+   text-align:center;
+   opacity:0.5;
+	 }
+  
+  #button{
+	  height:20px;
+	  position:relative;
+  }
+  img {
+    width: 150px;
+    height: 150px;
+	margin: 0px 0% 0px 0%;
+	border-color:white;
+	border-width:3px;
+	border-style:solid;
+ 
+}
+  #section1 {padding-top:50px;height:500px;color: #fff; background-color: #808080;}
+  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #606060;}
+  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #404040;}
+  #section41 {padding-top:50px;height:500px;color: #fff; background-color: #202020;}
+  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #101010;}
+  </style>
+</head>
+  
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <script>
+    AOS.init();
+  </script>
+<div id="theCarousel" class="carousel slide" data-ride="carousel">
+ 
+  <!-- Define how many slides to put in the carousel -->
+<ol class="carousel-indicators">
+    <li data-target="#theCarousel" data-slide-to="0" class="active"> </li >
+    <li data-target="#theCarousel" data-slide-to="1"> </li>
+    <li data-target ="#theCarousel" data-slide-to="2"> </li>
+</ol >
+ 
+  <!-- Define the text to place over the image -->
+  <div class="carousel-inner">
+    <div class="item active" >
+    <div class ="slide1"></div>
+    <div class="carousel-caption">
+	  <p><a href="https://www.patreon.com/scishow" class="btn btn-danger btn-large">Support Your Local Hobby Store</a></p>
+	  
+	   
+    </div>
+  </div>
+  <div class="item">
+  <div class="slide2"></div>
+  </div>
+  <div class="item">
+  <div class="slide3"></div>
+  <div class="carousel-caption">
+   
+  </div>
+  </div>
+  </div>
+
+  <!-- Set the actions to take when the arrows are clicked -->
+  <a class="left carousel-control" href="#theCarousel" data-slide="prev">
+  <span class="glyphicon glyphicon-chevron-left"> </span>
+  </a>
+  <a class="right carousel-control" href="#theCarousel" data-slide="next">
+  <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+  </div>
+
+
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="300">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Meadow Ridge T's & H's</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Our Specialty</a></li>
+          <li><a href="#section2">Who We Are</a></li>
+          <li><a href="#section3">Getting Involved</a></li>
+          <li><a href="#section42">Where to Find Us</a></li>
+            <ul class="dropdown-menu">
+              
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+<div id="section1" class="container-fluid">
+  <h1><u>Our Specialty</u></h1>
+ </br>
+  <p>Rc trucks, cars and model trains are our expertise. We pride ourselves on having almost any part that you need and don't know you need yet for your Rc masterpeices.</p>
+  <p> If by some chance you need a part we don't provide, we will be more than happy to add it to our stock as soon as possible for your convenience.</p>
+ 
+  
+ <!-- add animation to the images on scroll-->
+  <div style="text-align:center" data-aos="fade-right"><img src="images/train.jpg" class="img-rounded" alt="Cinque Terre">  <img src="images/helpinghand.jpg" class="img-rounded" alt="Cinque Terre"></div>
+
+</div>
+<div id="section2" class="container-fluid">
+  <h1><u>Who Are We?</u></h1>
+  <p> Pri ut intellegat mnesarchum, id vix legere iuvaret efficiendi. Ex everti inermis duo, dolorem conclusionemque eum no, sit quando quaestio oportere id. Est quaeque consulatu conceptam no, novum contentiones vel eu, ea sea odio cibo epicuri.</p>
+  <p>Aeque consulatu ut intellegat mnesarchum, id vix legere iuvaret efficiendi dolorem conclusionemque eum no, sit quando quaestio oportere id.  </p>
+    <div style="text-align:center" data-aos="fade-right"><img src="images/boat.jpg" class="img-rounded" alt="Cinque Terre"> <img src="images/heli.jpg" class="img-rounded" alt="Cinque Terre"></div>
+</div>
+ 
+<div id="section3" class="container-fluid">
+  <h1><u>How To Get Involved</u></h1>
+  </br></br>
+  <p>Getting involved is easy, simply visit. We put up shop to provide you with any parts and peices you might need on demand. When buying here, it allows us to continue providing you and others a reliable and educating experience.</p>
+  <p>Just want to look around? That is helpful as well. We love seeing and hearing your build ideas. It is your creativity and dreams that allow us succeed.</p>
+   
+    <div style="text-align:center" data-aos="fade-right">
+		<table>
+			<th><p>Do you seek to go above and beyond? Consider clicking the button here or the link at the bottom of the window and becoming a Patreon.</p></th>
+			<th> <button style="border-radius:6px; border-color:transparent; background-image:url(images/patreonbutton.png); height:150px; width:150px; background-color: transparent" onclick="window.location.href='https://www.patreon.com/scishow'"></button> </th>
+		</table>		 	
+	</div>
+</div>
+
+<div id="section42" class="container-fluid">
+  <h1 style="text-align:center"><u>Where to Find Us</u></h1>
+  <h3 style="text-align:center">Meadows Ridge Trains and Hobbies</h3>
+  <p style="text-align:center">7212 Rt. M</p><p style="text-align:center">
+Jefferson City, MO 65101</p>
+</br>
+<p style="text-align:center">573-395-4910</p>
+<p style="text-align:center">Normal Hours: 10:00AM - 7:00PM</p>
+</div>
+
+<footer class="footer"><p><a href="mailto:webmaster@example.com">Email Us</a>&nbsp; &nbsp; &nbsp; <a href="https://www.facebook.com/Meadowridgehobbies/">Find us on Facebook</a>&nbsp; &nbsp; &nbsp; <a href="https://www.patreon.com/scishow">Become a Patreon</a></p></footer>
+
+</body>
+</html>
